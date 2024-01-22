@@ -22,7 +22,7 @@ def completion_to_prompt(completion: str) -> str:
 
 # Uses Mistral-7B-instruct -- via API from together.ai
 def get_together_query_engine():
-    storage_context = StorageContext.from_defaults(persist_dir="./storage")
+    storage_context = StorageContext.from_defaults(persist_dir="./App/storage")
     generative_model = 'mistralai/Mistral-7B-Instruct-v0.2'
     llm = TogetherLLM(
             generative_model,
