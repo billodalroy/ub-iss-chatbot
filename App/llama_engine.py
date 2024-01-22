@@ -4,7 +4,7 @@ from llama_index.llms import OpenAI, TogetherLLM
 
 # Uses OpenAI gpt-3.5-turbo as the LLM
 def get_query_engine():
-    storage_context = StorageContext.from_defaults(persist_dir="./storage")
+    storage_context = StorageContext.from_defaults(persist_dir="./App/storage")
     llm = OpenAI(model="gpt-3.5-turbo", temperature=0, max_tokens=256)
 
     # configure service context
