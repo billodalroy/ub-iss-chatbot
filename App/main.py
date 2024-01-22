@@ -18,7 +18,6 @@ col3, col4, col5 = col2.columns(3)
 
 
 st.session_state["query_engine"] = get_together_query_engine()
-st.session_state["input"] = ''
 
 suggested_texts = [
     "What is OPT and CPT?",
