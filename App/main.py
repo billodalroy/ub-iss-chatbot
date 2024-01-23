@@ -14,7 +14,7 @@ st.markdown("#### Get answers to your all your queries as an international\
 
 col1, col2 = st.columns(2)
 col1.markdown("### Ask your query")
-col2.markdown("### What can you ask?")
+col2.markdown("### Frequently Asked Queries")
 col3, col4, col5 = col2.columns(3)
 
 
