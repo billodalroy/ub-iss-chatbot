@@ -50,7 +50,7 @@ if col5.button(suggested_texts[5]):
 if prompt := col1.text_input("Enter your query", key='input'):
     with st.spinner("Searching..."):
         response = st.session_state['query_engine'].query(prompt)
-    col1.markdown(f"{response}")
+    col1.markdown(f"{response.response}")
     col1.markdown("#### References")
     unique_sources = {source_mapping[str(response.source_nodes[i]
                       .metadata['file_path'])] for i in
