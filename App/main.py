@@ -1,5 +1,6 @@
 import streamlit as st
 from llama_engine import get_together_query_engine
+from source_map import source_mapping
 
 st.set_page_config(
     page_title="Ask UB-International Student Services (ISS)",
@@ -50,7 +51,13 @@ if prompt := col1.text_input("Enter your query", key='input'):
     with st.spinner("Searching..."):
         response = st.session_state['query_engine'].query(prompt)
     col1.markdown(f"{response}")
+    col1.markdown("#### References")
+    unique_sources = {source_mapping[str(response.source_nodes[i]
+                      .metadata['file_path'])] for i in
+                      range(len(response.source_nodes))}
 
+    for i in range(len(unique_sources)):
+        col1.write(f"{i+1}. {unique_sources.pop()}")
 else:
     st.text("Type your query above or Select a template prompt")
 
