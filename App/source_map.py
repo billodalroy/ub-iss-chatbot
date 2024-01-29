@@ -1,5 +1,5 @@
 source_mapping = {
-    "data/iss1.pdf": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/immigration-documents.html",
+    "data/iss.pdf": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/immigration-documents.html",
     "data/iss2.pdf": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/sevis-fee.html",
     "data/iss3.pdf": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/maintaining-f-1-student-status.html",
     "data/iss4.pdf": "https://www.buffalo.edu/international-student-services/immigration-visa/f-1-student/on-campus-employment.html",
